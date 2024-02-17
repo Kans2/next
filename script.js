@@ -1,4 +1,4 @@
-//string methods use 
+/*//string methods use 
 
 
 //1.concat
@@ -89,7 +89,93 @@ let Person = actorName.concat(actorSkills);
    
   num = parseFloat(num);   //using string to decimal convert
 
-  console.log(num);
+  console.log(num); */
 
+
+//conditional statements
+/*
+  let time = 10;
+  let greetings;   //this use of to follwing valu4es
+
+  if(time < 10){
+
+    greetings="good morning";
+    console.log(greetings);
+  }
+  else if (time < 20){
+
+    greetings ="GOOD DAY"
+    console.log(greetings);
+  }
+  else{
+    greetings = "Good Evening";
+    console.log(greetings)
+  }
+  
+
+
+  //practice
+  let password = 9;
+  if (password == 8){
+
+    password ="Welcome";
+    console.log(password);
+  }
+  else if (password < 8){
+
+    password="Password is too short";
+    console.log(password);
+  }
+  else if (password > 8){
+
+    password ="Password is tto long it should be 8 characters";
+    console.log(password);
+  }
+  else
+  {
+    password = "Please provide the password";
+    console.log(password);
+  } 
+
+//Switch Statements
+
+let x = 0;
+let bulb;
+
+switch(x){
+  case 0:
+    bulb = "off";
+    console.log(bulb);
+    break;
+  case 1:
+    bulb = "on";
+    console.log(bulb);
+    break;
+  default:
+    bulb = "no value found";
+    console.log(bulb);
+    break;
+}   
+
+//practice
+let fruite = "Orange";
+switch (fruite){
+
+  case "Banana":
+    console.log('this is Banana');
+    break;
+  case "Apple":
+    console.log("how you like the Apples");
+    break;
+  case "Orange":
+    console.log("this is Orange");
+    break;
+   default:
+    console.log("i dont know this friute");
+    break;
+
+}
+
+*/
 
 
