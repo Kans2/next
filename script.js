@@ -176,6 +176,82 @@ switch (fruite){
 
 }
 
+
+//for loop
+//for (initial express; condition ; incremental expression;){}
+
+for (let i=0; i<= 1000; i++) {
+  
+  console.log("hello world",i);
+  
+} 
+
+//while loop
+let i = 1;
+while (i<=5) {
+
+  console.log("hello world ", i)
+  i++;
+}  
+
+let i = 10;
+
+while (i <= 100){
+  console.log("hello", i);
+  i++;
+}  
+
+//Do while loop
+let i= 0;
+do{
+  console.log("hello ",i);
+  i++;
+}
+while (i<=5); 
+
+//Logical Operators
+
+//1. --> AND (&&)   //both true 
+
+const a = true;
+const b = false;
+const c = 4;
+//console.log(a && b);
+//console.log(c<6 && c >1);
+
+//2. --> OR (||)   //either is true , both are false give false
+//console.log(a || b); 
+
+//3. --> NOT (!)   // like toogler
+
+//console.log(!b);
 */
+
+//Arrays
+  //const mylist = [];
+  //console.log(mylist);
+
+//const array = ["helolo", "how",["fun", "like"]]
+
+//Array Techniques
+ //1.--> Push() add items to array like array.push("sun");
+ //2. --> pop() remove one item from array
+//3. --> shift()  removing the firsts item from array array.shift();
+//4. --> concat () adding more than one array array.concat(arra2);
+
+// array irukanu find array.includes('Go');
+// console.log(array.join('k'));
+
+//reverse  
+//const array =[1,2,3,4,5]
+//console.log(array.reverse());
+
+//console.log(array.sort());  //sorting technique
+
+
+
+
+
+
 
 
