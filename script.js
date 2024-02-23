@@ -1,4 +1,5 @@
-/*//string methods use 
+/*
+//string methods use 
 
 
 //1.concat
@@ -224,8 +225,8 @@ const c = 4;
 
 //3. --> NOT (!)   // like toogler
 
-//console.log(!b);
-*/
+//console.log(!b); 
+
 
 //Arrays
   //const mylist = [];
@@ -248,10 +249,93 @@ const c = 4;
 
 //console.log(array.sort());  //sorting technique
 
+//Objects
+const person = {
+
+  firstName :'proffesor',
+  lastName : 'thomas',
+  age : 18,
+  location : ['Planet', 'Earth'],
+  isProgemer : true,
+};
+
+//adding one more properties
+
+person.available = true
+console.log(person);
+
+//To delete the info
+
+delete person.firstName;
+console.log(person);
+
+
+//Practicing
+const car = {
+  type:'',
+  model:7,
+  color:'black',
+}
+console.log(typeof car);
+car.type = "Toyota"
+car.Wheels = 'spin'
+console.log(car); 
+
+function greetings(person){  //parametre
+
+
+  console.log(`welcome buudy to return ${person}`);
+
+}
+greetings("coder"); //passing arguments
 
 
 
 
+//functions
+const items = {
+  Veg :7,
+  Non_veg :10,
+  Water : 2,
+
+}
+function add(prices) {
+  
+  let total = 0;
+  for (let item of prices) {
+
+    total += items[item];
+  }
+  return total;
+     
+}
+
+const order = ['veg','nonVeg','water'];
+const Totalprice  = add(order);
+console.log('Total price is',Totalprice);
+
+//function Expresssion
+
+const greetings = function (user){
+
+  console.log(`hello ${user}`);
+}
+greetings ('user'); 
+
+//call back function
+
+function show(name , cb) {
+
+  console.log(`HELLO ${name}`);
+  cb()
+  
+}
+function cb(){
+
+  console.log(`I am an callBack function`);
+}
+show ('buddy',cb);
+*/
 
 
-
+//Scope in javaScript
