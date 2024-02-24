@@ -1,0 +1,11 @@
+{
+    "name":"stephen",
+    "age":20,
+    "email": "sample@.com",
+    "subscribed":true,
+    "hobbies":["Scientist","reserch","code"],
+    "address":{
+        "city":"New york",
+        "idk" : true
+    }
+}

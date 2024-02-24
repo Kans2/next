@@ -92,7 +92,6 @@ let Person = actorName.concat(actorSkills);
 
   console.log(num); */
 
-
 //conditional statements
 /*
   let time = 10;
@@ -335,7 +334,57 @@ function cb(){
   console.log(`I am an callBack function`);
 }
 show ('buddy',cb);
-*/
 
 
 //Scope in javaScript
+
+
+//Object methods
+
+function greet(){
+  return `hello , my name is ${person.name} & I am ${person.age} yreas old`
+}
+const person = {
+  name : "remo",
+  age:18,
+  greet,
+};
+console.log(person.greet()); 
+
+let Game = {
+   
+  sport : "football",
+  skill : "striker",
+  Details : function(){
+    return `My Game is ${Game.sport} & my Position is ${Game.skill}` ;
+    
+  },
+
+}
+console.log(Game.Details());  
+
+//JSON IN JAVASCRIPT
+const person = {
+  name: "stephen",
+  age: 20,
+  email: "sample@.com",
+  subscribed: true,
+  hobbies: ["Scientist", "reserch", "code"],
+  address: {
+    city: "New york",
+    idk: true,
+  },
+};
+
+//Json.stringify() --> convert object into json formot
+console.log(JSON.stringify(person));
+
+//parsing  revert to object
+
+console.log(JSON.parse(JSON.stringify(person)));
+
+*/
+
+const Day = new Date(2024, 2, 24, 12, 30, 0, 0); //date constructor
+
+console.log(Day);
