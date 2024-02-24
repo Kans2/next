@@ -383,8 +383,43 @@ console.log(JSON.stringify(person));
 
 console.log(JSON.parse(JSON.stringify(person)));
 
-*/
+
 
 const Day = new Date(2024, 2, 24, 12, 30, 0, 0); //date constructor
 
-console.log(Day);
+console.log(Day); 
+
+let Day = new Date();
+
+let hour = Day.getHours();
+let year = Day.getFullYear();
+let month = Day.getMonth();
+let day = Day.getDay();
+let minutes = Day.getMinutes();
+console.log(
+  `Year is ${year} the month is ${month} the day is ${day} the minutes is ${minutes} `
+); 
+
+//To string representation
+
+const Day = new Date();
+
+//console.log(Day.toDateString());
+
+//console.log(Day.toLocaleString());
+
+Day.setDate(Day.getDate() + 1);
+
+console.log(Day); 
+
+//set Intervel and set Time out
+
+let time = setInterval(
+  () => console.log(`this run again after 2 minutes`),
+  2000
+);
+
+setTimeout(function () {
+  clearTimeout(time);
+  console.log("hello");
+}, 10000); */
