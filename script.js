@@ -422,4 +422,170 @@ let time = setInterval(
 setTimeout(function () {
   clearTimeout(time);
   console.log("hello");
-}, 10000); */
+}, 10000); 
+//Spread Operator
+
+function giveme4(a, b, c, d) {
+  console.log("a", a);
+  console.log("b", b);
+  console.log("c", c);
+  console.log("d", d);
+}
+
+const fruites = ["avacado", "apple", "banana", "lichi"];
+
+giveme4(...fruites); //... spread operator
+//giveme4(1, 2, 3, 4); 
+
+//using Arrays
+const fruites = ["avacodo", "grapes", "watermelon", "orange"];
+const food = ["rice", "noodels", "chicken", "mutton"];
+const order = [...fruites, ...food];
+console.log(order);
+
+//Spread opr using objects
+
+const obj1 = { x: 1, y: 2, z: 3 };
+
+const obj2 = { name: "ronaldo" };
+
+const obj3 = { ...obj1, ...obj2 };
+
+console.log(obj3); 
+
+let arr = [1, 2, 3];
+let arr2 = [4, 5];
+
+const clone = [...arr, ...arr2];
+
+console.log(clone);
+
+const user = {
+  name: "jhon",
+  age: 22,
+};
+
+const copy = { ...user };
+console.log(copy); 
+
+//Rest opr variadic function
+function user(x, ...Userdata) {
+  console.log(x);
+  console.log(Userdata);
+}
+user("hello", 2024, "what next"); 
+
+function person(firstName, lastName, ...hobbies) {
+  console.log("firstanme:", firstName);
+  console.log("lastname:", lastName);
+  console.log("Hobbies:", hobbies);
+}
+person("kannan", "rio", "football", "singing", "drawing");
+
+function variadic(...params) {
+  console.log(params);
+}
+variadic("hello", "welcome");
+console.log(2024, 2050, ["one"]); 
+
+//Destruction to Arrays and Objects (unpick data diffrent datas)
+
+//Arrays
+const users = ["user1", "user2"];
+
+const [user1, user2] = users; //destructred
+
+console.log(user1, user2);
+
+const [red, yellow, green] = users;
+
+console.log(red); 
+
+let a, b;
+[a = 5, b = 10] = ["one"]; //default values ARRAY DESTRUCTRE
+
+console.log(b); 
+
+//using functions
+function f() {
+  return [2, 4];
+}
+let c, d;
+[c, d] = f();
+
+console.log(c);
+console.log(d); 
+
+//Ignore the value form an return
+
+function f() {
+  return [4, 5, 6];
+}
+
+const [a, , c] = f();
+
+console.log(a);
+console.log(c); 
+
+//Assinging the rest of an Array to a variable
+
+const [a, ...b] = ["one", "two", "three"];
+console.log(b); 
+
+//practice
+
+const colors = ["red", "green", "yellow", "blue", "orange"];
+
+const [color1, color2, color3] = colors;
+
+console.log(color1, color2, color3); 
+
+//Object Destructuring
+
+const student = { name: "kans", position: "first", hobby: "programming" };
+
+const { hobby } = student;
+
+console.log(hobby); 
+
+//practice
+
+const person = {
+  name: "Jhone Doe",
+  age: 30,
+  gender: "male",
+  country: "USA",
+};
+
+const { name, age, country } = person;
+
+console.log(name, age, country); 
+
+//renaming the object
+
+const num = { x: 100, y: 200 };
+
+const { x: new1, y: new2 } = num; //rename the variables
+
+console.log(new1, new2); 
+
+//Object sestructring and rest operator
+
+let { a, b, ...rest } = { a: 1, b: 2, c: 20, d: 40, e: 70 };
+
+console.log(rest); */
+
+//function Destructig
+
+const person = {
+  name: "jhon Doe",
+  age: 20,
+  country: "USA",
+};
+
+function personInfo({ name, age, country }) {
+  console.log(`Name:${name}`);
+  console.log(`Age:${age}`);
+  console.log(`Country:${country}`);
+}
+personInfo(person);
