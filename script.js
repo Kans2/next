@@ -573,7 +573,7 @@ console.log(new1, new2);
 
 let { a, b, ...rest } = { a: 1, b: 2, c: 20, d: 40, e: 70 };
 
-console.log(rest); */
+console.log(rest); 
 
 //function Destructig
 
@@ -588,4 +588,133 @@ function personInfo({ name, age, country }) {
   console.log(`Age:${age}`);
   console.log(`Country:${country}`);
 }
-personInfo(person);
+personInfo(person); 
+
+//nested destructring
+
+const songs = [
+  {
+    name: "Lucky you",
+    singer: "anirudh",
+    duration: 30,
+  },
+
+  {
+    name: "just like you",
+    singer: "ar rahman",
+    duration: 30,
+  },
+  {
+    name: "enie menie",
+    singer: "justin",
+    duration: 30,
+  },
+  {
+    name: "kid lario",
+    singer: "justin",
+    duration: 0.5,
+  },
+];
+
+const [, , { name }] = songs;
+
+console.log(name); 
+
+// Extracting data using object destructuring
+const {
+  user: {
+    name,
+    age,
+    address: { city, country },
+    hobbies,
+    scores: { math, science, history },
+    email,
+  },
+  products: [product1, product2, product3],
+  settings: {
+    darkMode,
+    notifications: {
+      email: emailNotifications,
+      sms: smsNotifications,
+      push: pushNotifications,
+    },
+    language,
+  },
+} = data;
+*/
+
+/*
+// Logging the extracted data using template literals
+console.log(`Name: ${name}`);
+console.log(`Age: ${age}`);
+console.log(`Address: ${city}, ${country}`);
+console.log(`Hobbies: ${hobbies.join(", ")}`);
+console.log(`Math Score: ${math}`);
+console.log(`Science Score: ${science}`);
+console.log(`History Score: ${history}`);
+console.log(`Product 1: ${product1.name} - $${product1.price}`);
+console.log(`Product 2: ${product2.name} - $${product2.price}`);
+console.log(`Product 3: ${product3.name} - $${product3.price}`);
+console.log(`Dark Mode: ${darkMode}`);
+console.log(`Email Notifications: ${emailNotifications}`);
+console.log(`SMS Notifications: ${smsNotifications}`);
+console.log(`Push Notifications: ${pushNotifications}`);
+console.log(`Language: ${language}`);
+
+const data = {
+  user: {
+    id: 123,
+    name: "John Doe",
+    age: 30,
+    email: "john.doe@example.com",
+    address: {
+      city: "New York",
+      country: "USA",
+    },
+    hobbies: ["Reading", "Painting", "Cooking"],
+    scores: {
+      math: 95,
+      science: 88,
+      history: 75,
+    },
+  },
+  products: [
+    { id: 1, name: "Laptop", price: 1000 },
+    { id: 2, name: "Phone", price: 800 },
+    { id: 3, name: "Tablet", price: 500 },
+  ],
+  settings: {
+    darkMode: true,
+    notifications: {
+      email: true,
+      sms: false,
+      push: true,
+    },
+    language: "English",
+  },
+};
+
+const {
+  user: {
+    id,
+    name,
+    address,
+    email,
+    address: { city, country },
+  },
+  products: [product1, product2, product3],
+} = data;
+
+console.log(`the product details is ${product1.name}-${product1.price}`); */
+
+//Ternary Operator : ?
+
+function password(ps) {
+  return ps === 8
+    ? `Strong password`
+    : `password should be atleast 8 characters`;
+}
+
+const res = password(3);
+
+console.log(res);
