@@ -705,7 +705,7 @@ const {
   products: [product1, product2, product3],
 } = data;
 
-console.log(`the product details is ${product1.name}-${product1.price}`); */
+console.log(`the product details is ${product1.name}-${product1.price}`); 
 
 //Ternary Operator : ?
 
@@ -717,4 +717,39 @@ function password(ps) {
 
 const res = password(3);
 
-console.log(res);
+console.log(res);  
+
+function f(person) {
+  return person === "money" ? `buy products` : `bring some money`;
+}
+
+const res = f("money");
+
+console.log(res);   
+let Money = false;
+let haveMoney = Money === true ? `buy products` : `bring some money bro`;
+
+console.log(haveMoney);   
+
+//for in loop
+
+let person = {
+  name: "robort",
+  age: 20,
+  gender: "male",
+};
+
+for (let keys in person) {
+  console.log(keys, person[keys]);  
+} 
+
+let list = ["one", "two", "three", "four"];
+
+for (let index in list) {
+  console.log(`${index}: ${list[index]}`);
+}  */
+
+const object = { a: 1, b: 2, c: 3, d: 4 };
+
+for (let keys in object) {
+}
