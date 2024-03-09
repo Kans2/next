@@ -90,4 +90,68 @@ const multiply = (a, b = 8) => {
 };
 
 const res = multiply(2);
-console.log(res); */
+console.log(res); 
+
+//for in loop
+
+const object = { a: 1, b: 2, c: 3 };
+
+for (let properties in object) {
+  console.log(`${properties} :${object[properties]}`);
+} 
+
+//for of loop
+
+let peoples = ["person1", "person2", "person3"];
+
+for (let people of peoples) {
+ console.log(people);
+} 
+
+const text = "hello";
+
+for (const char of text) {
+  console.log(char);
+} 
+
+const array1 = ["a", "b", "c"];
+
+for (let arr of array1) {
+  console.log(arr);
+}  
+
+//For Each loop  //Array each method
+
+const colors = ["teal", "blue", "red", "green"];
+
+colors.forEach((person) => console.log(person)); 
+
+//Whatever  is inside
+
+const words = ["hello", "bird", "table", "football", "pipe", "code"];
+
+const capWords = words.forEach((word, index, arr) => {
+  arr[index] = word[0].toUpperCase() + word.substring(1);
+});
+
+console.log(words); 
+
+
+
+
+//array each method
+let num = [1, 2, 3, 4, 5];
+
+let sum = 0;
+
+const add = (num) => {
+  sum += num;
+};
+
+for (let i = 0; i <= 0; i++) {}
+
+num.forEach(add);
+console.log(sum);
+*/
+
+//map method
