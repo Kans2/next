@@ -152,6 +152,58 @@ for (let i = 0; i <= 0; i++) {}
 
 num.forEach(add);
 console.log(sum);
-*/
 
 //map method
+//using creating the new array with results every element in calling
+
+let numbers = [1, 2, 3, 4, 5];
+
+let double = numbers.map((num) => num * 2);
+
+console.log(double); 
+
+let peoples = [
+  { firstName: "Macom", lastName: "Reynolds" },
+  { firstName: "Kaylee", lastName: "Frye" },
+  { firstName: "Jayne", lastName: "Cobb" },
+];
+
+const results = peoples.map((person) => {
+  return [person.firstName, person.lastName];
+});
+console.log(results); 
+const Numbers = [1, 2, 3, 4, 5, 6, 7];
+
+//const multiply = Numbers.map((total) => total * 10);
+
+//console.log(multiply);
+
+function Add(num) {
+  return num * 10;
+}
+
+const Total = Numbers.map(Add);
+
+console.log(Total);   
+//Filter method using
+
+//specific object or array data is to filter in to be an filter method
+
+const songs = [
+  { name: "Lucky you", duaration: 4.34 },
+  { name: "Just like you", duaration: 3.23 },
+  { name: "The Search", duaration: 2.34 },
+  { name: "Old Town Road", duaration: 5.32 },
+];
+
+console.log(songs.filter((song) => song.duaration > 4)); */
+
+// this is using as amazon for sale the laptops
+const computers = [
+  { ram: 4, hdd: 200 },
+  { ram: 8, hdd: 400 },
+  { ram: 10, hdd: 600 },
+  { ram: 128, hdd: 1200 },
+];
+
+console.log(computers.filter((com) => com.ram >= 10));
