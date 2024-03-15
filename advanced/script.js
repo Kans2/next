@@ -196,7 +196,7 @@ const songs = [
   { name: "Old Town Road", duaration: 5.32 },
 ];
 
-console.log(songs.filter((song) => song.duaration > 4)); */
+console.log(songs.filter((song) => song.duaration > 4)); 
 
 // this is using as amazon for sale the laptops
 const computers = [
@@ -206,4 +206,105 @@ const computers = [
   { ram: 128, hdd: 1200 },
 ];
 
-console.log(computers.filter((com) => com.ram >= 10));
+console.log(computers.filter((com) => com.ram >= 10)); 
+
+const ages = [32, 33, 16, 40];
+
+function isAdult(age) {
+  return age > 18;
+}
+const res = ages.filter(isAdult);
+console.log(res); 
+
+//practice
+
+const words = [
+  "spray",
+  "limit",
+  "elite",
+  "exuberment",
+  "destruction",
+  "present",
+];
+
+function isWord(words) {
+  return words.length > 6;
+}
+
+const res = words.filter(isWord);
+
+console.log(res); 
+
+//find method is built in array using specefic
+
+const peoples = [
+  { name: "huxn", age: 17 },
+  { name: "jhon", age: 18 },
+  { name: "alex", age: 20 },
+  { name: "jimmy", age: 30 },
+  { name: "alex", age: 30 },
+];
+
+const res = peoples.find((person) => person.name == "alex");
+
+console.log(res); 
+
+//practice
+const ages = [3, 10, 18, 20];
+
+function isAdult(age) {
+  return age > 18;
+}
+
+const res = ages.find(isAdult);
+
+console.log(res); 
+let products = [
+  { name: "checkers", catagory: "Toys" },
+  { name: "Harry Potter", catagory: "Books" },
+  { name: "iPhone", catagory: "Electronics" },
+  { name: "Learn Golang", catagory: "Books" },
+];
+
+const res = products.find((mind) => mind.catagory == "Books");
+
+console.table(res);  
+
+//every method and some
+
+const peoples = ["huxn", "jhoncena", "alex"];
+
+const res1 = peoples.every((person) => person.length == 4);
+
+//console.log(res1);
+
+const res2 = peoples.some((person) => person.length == 4);  //any one element true
+console.log(res2); 
+
+//Array Reducer function
+const number = [1, 2, 3, 4, 5, 6, 7];    //previous and current
+
+const sum = number.reduce((p, c) => {
+  console.log(`Previous; ${p}`);
+  console.log(`Current; ${c}`);
+  return p + c;
+}, 0);
+
+console.log(sum); 
+
+const words = ["apple", "banana", "orange", "banana", "apple", "grape"];
+
+const wordFrequency = words.reduce((frequencyMap, word) => {
+  frequencyMap[word] = frequencyMap[word] || 0 + 1;
+  return frequencyMap;
+}, {});
+
+console.log(wordFrequency); 
+
+let numbers = [1, 2, 3, 4, 5];
+
+const calculatedProduct = numbers.reduce((p, c) => {
+  return p + c;
+}, 0);
+
+console.log(calculatedProduct);  */
