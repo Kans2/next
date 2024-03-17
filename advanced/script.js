@@ -307,4 +307,127 @@ const calculatedProduct = numbers.reduce((p, c) => {
   return p + c;
 }, 0);
 
-console.log(calculatedProduct);  */
+console.log(calculatedProduct);  
+
+//map data structres
+//it is built in key value ,iterations
+const map = new Map();
+//console.log(map);
+
+//keys declare
+
+const keyOne = "String";
+const keyTwo = {};
+const keyThree = function name(params) {};
+
+map.set(keyOne, "value of key one");
+map.set(keyTwo, "the value of key two");
+map.set(keyThree, "value of the keyThree");
+//console.log(map);
+
+//console.log(map.keys()); //finding keys
+//console.log(map.values()); //finding values
+//console.log(map.delete(keyTwo));  //any keys to want delete
+console.log(map.size);
+console.log(map);
+
+//Iterating through map
+
+for (let [key, value] of map) {
+  console.log(`${key}--${value}`);
+}
+
+for (let key of map.keys()) {
+  console.log(key);
+}
+
+for (let value of map.values()) {
+  console.log(value);
+} 
+
+//paractice
+
+const map = new Map();
+
+map.set("a", 1);
+map.set("b", 2);
+map.set("c", 3);
+//console.log(map.get("a"));
+
+console.log(map);
+console.log(map.size);
+console.log(map.delete("b"));
+console.log(map.size); 
+
+//set is an buit in function data structre
+//removes the dublicates in array are the values unique values
+
+//const values = [1, 2, 3, 3, 4, 4, 4, 4, 5, 6, 6, 6, 6, 6];
+const Myset = new Set();
+
+Myset.add("apple"); //add method
+Myset.add("orange");
+Myset.add("banana");
+
+//console.log(Myset.has("orange"));   //true or false
+
+//using to delete
+console.log(Myset.delete("orange"));
+
+//to clear
+//Myset.clear();
+
+for (let item of Myset) {
+  console.log(Myset);
+}  
+
+//Practice
+
+const Letters = new Set();
+Letters.add("a");
+Letters.add("b");
+Letters.add("c");
+
+for (let item of Letters) {
+  console.log(item);
+}   
+
+//Symbol is an unique immutable data type
+
+//const mySymbol = Symbol("my symbol");
+//console.log(mySymbol);
+
+//Comparing the symbol
+
+const mySymbol1 = Symbol("name");
+const mySymbol2 = Symbol("name");
+
+const obj = {};
+
+obj[mySymbol1] = "value1";
+obj[mySymbol2] = "value2";
+
+console.log(obj);
+
+const symbol1 = Symbol("name");
+const symbol2 = Symbol("name");
+
+const person = {};
+
+person.age = 18;
+person["gender"] = ["female"];
+person["gender"] = ["male"];
+
+person[symbol1] = "alex";
+console.log(person); 
+
+//practice
+
+const newSymbol = Symbol("foo");
+
+console.log(typeof newSymbol);
+
+const obj = {};
+
+obj[Symbol("foo")] = "some foo";
+console.log(obj); */
