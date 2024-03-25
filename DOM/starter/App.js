@@ -115,6 +115,11 @@ console.log(firstLi.nextElementSibling.nextElementSibling.textContent);
 //PREVIOUS ELEMENT
 let fourthLi = document.querySelector(".fourth");
 console.log(fourthLi); 
-console.log(fourthLi.previousElementSibling);  */
+console.log(fourthLi.previousElementSibling);  
 
 //MODIFYING STYLING
+
+const h1 = document.querySelector("h1");
+
+console.log((h1.style.color = "green"));
+h1.style.backgroundColor = "yellow"; */
