@@ -122,4 +122,61 @@ console.log(fourthLi.previousElementSibling);
 const h1 = document.querySelector("h1");
 
 console.log((h1.style.color = "green"));
-h1.style.backgroundColor = "yellow"; */
+h1.style.backgroundColor = "yellow"; 
+
+//CREATING ELEMENTS AND APPENDING INTO THE DOM
+
+const h1 = document.createElement("h1"); //to create whatever elements
+h1.textContent = "hello buddy";
+console.log(h1.textContent);
+h1.classList.add("tset");
+console.log(h1); 
+
+//APPENDING
+const h1 = document.createElement("h1"); //to create whatever elements
+
+const body = document.body;
+h1.textContent = "working";
+
+body.appendChild(h1);    //add the creating elements in body 
+console.log(h1.textContent);  
+
+const ul = document.querySelector("ul");
+const newli = document.createElement("li");
+newli.innerText = "i am a new tag";
+
+ul.appendChild(newli);
+
+const firstli = document.querySelector("li");
+
+//SELECTOR INSERT BEFORE(what,were)
+ul.insertBefore(newli, firstli);  
+
+const firstP = document.querySelector("p");
+const i = document.createElement("i");
+i.innerText = "Im italics";
+firstP.insertAdjacentHTML("beforebegin", i);
+firstP.insertAdjacentHTML("afterbegin", i);
+firstP.insertAdjacentHTML("afterend", i);
+firstP.insertAdjacentHTML("beforeend", i);
+
+console.log(firstP);  
+
+//APPEND      ----used to multiple elements in the single ----
+const i = document.createElement("i");
+i.innerText = "Im italics";
+const h1 = document.createElement("h1");
+h1.innerText = "i am h1";
+let section = document.querySelector("section");
+section.append(i, h1);
+section.prepend(i, h1);
+console.log(section);  
+
+//REMOVE
+
+const newList = document.querySelector(".new-list");
+const four = document.querySelector(".fourth");
+
+newList.removeChild(four);
+
+newList.remove(); //used to delete everything any kind of tag. */
