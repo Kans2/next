@@ -179,4 +179,34 @@ const four = document.querySelector(".fourth");
 
 newList.removeChild(four);
 
-newList.remove(); //used to delete everything any kind of tag. */
+newList.remove(); //used to delete everything any kind of tag. 
+
+//EVENTS
+
+let best = document.querySelector(".work");
+
+best.addEventListener("click", function () {
+  console.log("hello");
+}); 
+function greet() {
+  console.log("hello world");
+}
+best.addEventListener("click", greet); 
+
+best.addEventListener("click", () => {
+  console.log("yellow buddy");
+}); 
+
+//EVENT OBJECT
+let para = document.querySelector(".para");
+
+para.addEventListener("click", (even) => {
+  console.log(even);
+});   */
+
+const form = document.querySelector("form");
+const input = document.querySelector("input");
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); //used to the browser loaded when the browser is loading to
+  console.log(input.value);
+});
