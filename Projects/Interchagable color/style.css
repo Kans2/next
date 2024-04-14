@@ -1,0 +1,39 @@
+input {
+  cursor: pointer;
+}
+.btn {
+  width: 150px;
+  padding: 15px;
+  margin: 0.5rem;
+  border: 0;
+  display: inline-block;
+  border-radius: 10px;
+}
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20%;
+}
+.purple {
+  background-color: purple;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.brown {
+  background-color: brown;
+}
+.orange {
+  background-color: orange;
+}
+.red {
+  background-color: red;
+}
