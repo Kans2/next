@@ -203,10 +203,96 @@ let para = document.querySelector(".para");
 para.addEventListener("click", (even) => {
   console.log(even);
 });   */
-
+/*
 const form = document.querySelector("form");
 const input = document.querySelector("input");
 form.addEventListener("submit", (e) => {
   e.preventDefault(); //used to the browser loaded when the browser is loading to
   console.log(input.value);
+});  */
+/*
+//Mouse events
+// 1. click
+// 2.contextmenu
+// 3.dbclick
+// 4.mousedown
+//5. mouseenter
+//6.mouuseleave
+//7.mousemove
+//8.mouseout
+//9.mouseover
+//10.mouseup
+
+let one = document.querySelector(".click");
+let two = document.querySelector(".context-menu");
+let three = document.querySelector(".dbclick");
+let four = document.querySelector(".mousedown");
+let five = document.querySelector(".mouseenter");
+let six = document.querySelector(".mouseleave");
+let seven = document.querySelector(".mouseout");
+let eight = document.querySelector(".mouseover");
+let nine = document.querySelector(".mousemove");
+let ten = document.querySelector(".mouseup");
+
+two.addEventListener("contextmenu", () => {
+  //used when right click the element
+  two.classList.toggle("red");
+});
+
+three.addEventListener("dblclick", () => {
+  // when double click specific element or tag
+  three.classList.toggle("green");
+});
+
+four.addEventListener("mousedown", () => {
+  // when double click specific element or tag
+  four.classList.toggle("blue");
+});
+
+five.addEventListener("mouseenter", () => {
+  five.classList.toggle("yellow");
+});
+
+six.addEventListener("mouseleave", () => {
+  six.classList.toggle("orange");
+});
+
+seven.addEventListener("mousemove", () => {
+  //seven.classList.toggle("violet");
+  seven.textContent = "hello";
+});
+
+eight.addEventListener("mousemove", () => {
+  //seven.classList.toggle("violet");
+  eight.textContent = "hello";
+});
+
+nine.addEventListener("mousemove", () => {
+  //seven.classList.toggle("violet");
+  nine.textContent = "hello world";
+});
+
+ten.addEventListener("mouseup", () => {
+  ten.classList.toggle("violet");
+});   */
+
+//KEYBOARD EVENTS
+
+const input = document.querySelector("input");
+input.style.padding = "20px";
+
+//input.addEventListener("keypress", () => {
+// console.log("key has pressed");
+//});
+
+//input.addEventListener("keyup", () => {
+//  console.log("keys up");
+//});
+
+//USEFULL PROPERTIES AND METHODS
+input.addEventListener("keypress", (e) => {
+  //to get char code
+  //console.log(e.charCode);
+  //console.log(e.code);
+  console.log(e.ctrlKey);
 });

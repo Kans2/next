@@ -747,9 +747,24 @@ let list = ["one", "two", "three", "four"];
 
 for (let index in list) {
   console.log(`${index}: ${list[index]}`);
-}  */
+}  
 
 const object = { a: 1, b: 2, c: 3, d: 4 };
 
 for (let keys in object) {
-}
+} */
+const person = {
+  name: "stephen",
+  age: 20,
+  email: "sample@.com",
+  subscribed: true,
+  hobbies: ["Scientist", "reserch", "code"],
+  address: {
+    city: "New york",
+    idk: true,
+  },
+};
+
+const response = JSON.stringify(person);
+console.log(response);
+console.log(JSON.parse(response));
