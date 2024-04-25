@@ -432,8 +432,15 @@ const obj = {};
 obj[Symbol("foo")] = "some foo";
 console.log(obj); */
 
-const Number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for (let i = 0; i <= Number.length; i++) {
-  console.log(i++);
+//const Number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//for (let i = 0; i <= Number.length; i++) {
+//console.log(i++);
+//}
+
+function Reverse(re) {
+  for (let i = 0; i <= re.length; i++) {}
 }
-console.log(Number.includes(1));
+
+const res = Reverse("hello");
+
+console.log(res);
