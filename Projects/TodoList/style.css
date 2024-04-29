@@ -44,3 +44,17 @@ form button p {
   height: 300px;
   background-color: yellow;
 }
+.todo {
+  border-left: grey;
+  padding: 8px;
+  color: rgb(75, 75, 75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.delete {
+  color: grey;
+  cursor: pointer;
+}
