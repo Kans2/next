@@ -753,18 +753,70 @@ const object = { a: 1, b: 2, c: 3, d: 4 };
 
 for (let keys in object) {
 } */
-const person = {
-  name: "stephen",
-  age: 20,
-  email: "sample@.com",
-  subscribed: true,
-  hobbies: ["Scientist", "reserch", "code"],
-  address: {
-    city: "New york",
-    idk: true,
+/*
+const data = {
+  user: {
+    id: 123,
+    name: "John Doe",
+    age: 30,
+    email: "john.doe@example.com",
+    address: {
+      city: "New York",
+      country: "USA",
+    },
+    hobbies: ["Reading", "Painting", "Cooking"],
+    scores: {
+      math: 95,
+      science: 88,
+      history: 75,
+    },
+  },
+  products: [
+    { id: 1, name: "Laptop", price: 1000 },
+    { id: 2, name: "Phone", price: 800 },
+    { id: 3, name: "Tablet", price: 500 },
+  ],
+  settings: {
+    darkMode: true,
+    notifications: {
+      email: true,
+      sms: false,
+      push: true,
+    },
+    language: "English",
   },
 };
 
-const response = JSON.stringify(person);
-console.log(response);
-console.log(JSON.parse(response));
+const {
+  user: {
+    name,
+    id,
+    age,
+    email,
+    address: { city },
+    hobbies: [one],
+  },
+} = data;
+
+console.log(`the user name is :${name}`);
+console.log(`the id of the user is:${id}`);
+console.log(`the hobby of the morning is :${one}`); */
+
+function total(nums, target) {
+  const map = new Map();
+  for (let i = 0; i < nums.length; i++) {
+    const complement = target - nums[i];
+    if (map.has(complement)) {
+      return [map.get(complement), i];
+    }
+    map.set(nums[i], i);
+  }
+  return [];
+}
+const nums = [2, 7, 6, 8];
+
+const target = 10;
+
+const sum = total(nums, target);
+
+console.log(sum);
