@@ -230,3 +230,89 @@ String.prototype.hello = function () {
 };
 
 console.log("hello and welcome".hello());  */
+
+//PROTYPAL INHERITANCE
+//==> mechanism in javascript that allows objects to inherit properties and method for other objects.
+//--> heirachical chain of inheritance  (parent to the child);
+/*
+function Animal(name) {
+  this.name = name;
+}
+
+Animal.prototype.sound = function () {
+  return "Animal Sound";
+};
+
+const animal1 = new Animal("Frog");
+console.log(animal1.sound());
+
+//Doggy
+function Dog(name, breed) {
+  Animal.call(this, name); //Inheritance
+  this.breed = breed;
+}
+
+Dog.prototype = Object.create(Animal.prototype); //this method is newly created to the partent.
+
+const dog1 = new Dog("Huskey", "Good");
+console.log(dog1.sound());   */
+
+//CLASSES
+//-->classes are one of features introduced in es6 version of javascript
+//--> class is a blueprint of the object. you can create an object from the class
+//-->think of an class sketch (protype) of house. it contains floors,doors,windows,etc..
+//--> many house can made from the same description. many objects from a class
+/*
+//CLASS DECLARATION
+class Person {
+  constructor(firstName, lastName, age) {
+    //Instances Members
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.info = function () {
+      return `${this.firstName}. ${this.lastName} ${this.age}`;
+    };
+  }
+
+  //prototype method
+  greet() {
+    return `hello there ${this.firstName} ${this.lastName}`;
+  }
+}
+//classes in inheritance
+
+class Progremmer extends Person {
+  constructor(firstName, lastName, age, pl, experience) {
+    super(firstName, lastName, age); //call the parent constructor
+    this.pl = pl;
+    this.experience = experience;
+  }
+}
+
+const kans = new Progremmer("kans", "dev", "19", "javascript", 2);
+console.log(kans.greet());
+
+const jhon = new Person("kans", "dev", 20);
+console.log(jhon.greet());  */
+
+class Hero {
+  constructor(name, level) {
+    this.name = name;
+    this.level = level;
+  }
+  greet() {
+    return `hi ${this.name} level:${this.level}`;
+  }
+}
+
+class Mega extends Hero {
+  constructor(name, level) {
+    super(name, level);
+  }
+}
+
+const person1 = new Mega("Ben", 100);
+
+console.log(person1);
+console.log(person1.greet());
