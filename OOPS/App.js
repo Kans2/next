@@ -161,3 +161,59 @@ const genericAnimal = new Animal("Generic Animal");
 const dog = new Dog("buddy");
 console.log(dog);
 */
+
+/*
+//SUPERCLASS
+
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  makeSound() {
+    return "Unknown Sound";
+  }
+}
+
+//Sub class from Animal
+
+class Dog extends Animal {
+  constructor(name) {
+    super(name);
+  }
+  makeSound() {
+    return "Woof";
+  }
+}
+
+const genericAnimal = new Animal("Generic Animal");
+console.log(genericAnimal.makeSound());
+
+const dog = new Dog("Buddy");
+console.log(dog.makeSound());
+
+
+
+//POLYMORPHISM
+
+//method overloading---> polymorphism allows objects to be treated as **(work with diffrent type of objects)
+
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  makeSound() {
+    return "Unknown Sound";
+  }
+}
+
+//Sub class from Animal
+
+class Dog extends Animal {
+  constructor(name) {
+    super(name);
+  }
+  //Overriding method
+  makeSound() {
+    return "Woof";
+  }
+}  */
