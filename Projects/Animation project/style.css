@@ -53,7 +53,7 @@ nav ul li a {
   transform: rotate(-90deg);
   margin-top: 10rem;
   font-size: 3rem;
-  font-family: "Kumar One Outline", cursive;
+  font-family: "Kumar One Outline", cursive !important;
 }
 .main-info {
   transform: rotate(-90deg);

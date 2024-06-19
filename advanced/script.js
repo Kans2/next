@@ -437,10 +437,18 @@ console.log(obj); */
 //console.log(i++);
 //}
 
-function Reverse(re) {
-  for (let i = 0; i <= re.length; i++) {}
-}
+const colors = ["teal", "blue", "red", "green"];
 
-const res = Reverse("hello");
+colors.forEach((person) => console.log(person));
 
-console.log(res);
+let num = [1, 2, 3, 4, 5];
+
+let sum = 0;
+
+const add = (num) => {
+  sum += num;
+};
+
+num.forEach(add);
+
+console.log(sum);

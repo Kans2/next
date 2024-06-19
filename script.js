@@ -820,3 +820,5 @@ const target = 10;
 const sum = total(nums, target);
 
 console.log(sum);
+
+//practice
